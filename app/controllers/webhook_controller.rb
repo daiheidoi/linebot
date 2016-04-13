@@ -4,7 +4,7 @@ class WebhookController < ApplicationController
   CHANNEL_ID = ENV['LINE_CHANNEL_ID']
   CHANNEL_SECRET = ENV['LINE_CHANNEL_SECRET']
   CHANNEL_MID = ENV['LINE_CHANNEL_MID']
-  OUTBOUND_PROXY = ENV['FIXIY_URL']
+  OUTBOUND_PROXY = ENV['FIXIE_URL']
 
   def callback
     unless is_validate_signature
